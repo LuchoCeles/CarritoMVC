@@ -6,32 +6,22 @@ using System.Web.Mvc;
 
 namespace Carrito_de_Compra_Admin.Controllers
 {
-    public class HomeController : Controller
+    public class MantenedorController : Controller
     {
-        public ActionResult Index()
-        {
-            return View();
-        }
-
-        public ActionResult Usuarios()
-        {
-            return View();
-        }  
-        
-        public ActionResult Marcas()
-        {
-            return View();
-        }     
-        
-        public ActionResult Productos()
-        {
-            return View();
-        }    
-        
+        // GET: Mantenedor
         public ActionResult Categorias()
         {
             return View();
         }
 
+        public ActionResult Marcas()
+        {
+            return View();
+        }
+
+        public ActionResult Productos()
+        {
+            return View();
+        }
     }
 }
