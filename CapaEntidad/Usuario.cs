@@ -13,7 +13,7 @@ namespace CapaEntidad
         public string Apellido { get; set; }
         public string Correo { get; set; }
         public string Clave { get; set; }
-        public bool Reestrablecer { get; set; }
+        public bool Restablecer { get; set; }
         public bool Activo { get; set; }
     }
 }
