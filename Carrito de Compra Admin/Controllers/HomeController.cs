@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using CapaEntidad;
+using CapaNegocio;
 
 namespace Carrito_de_Compra_Admin.Controllers
 {
@@ -18,20 +20,13 @@ namespace Carrito_de_Compra_Admin.Controllers
             return View();
         }  
         
-        public ActionResult Marcas()
+        public JsonResult ListarUsuarios()
         {
-            return View();
-        }     
-        
-        public ActionResult Productos()
-        {
-            return View();
-        }    
-        
-        public ActionResult Categorias()
-        {
-            return View();
-        }
+            List<Usuario> oLista = new List<Usuario>();
 
+            oLista = new CN_Usuarios().Listar();
+
+            return Json(oLista, JsonRequestBehavior.AllowGet);
+        }
     }
 }
